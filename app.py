@@ -5,7 +5,7 @@ import numpy as np
 app = Flask(__name__)
 model = joblib.load('RF_model.pkl')
 
-# Calculation functions
+
 def calculate_index(val, breakpoints):
     for bp in breakpoints:
         if val <= bp[0]:
@@ -30,7 +30,6 @@ def home():
 def predict():
     try:
         # Get the data from the POST request
-        # Conversion from string to float is required
         so2 = float(request.form.get('so2'))
         no2 = float(request.form.get('no2'))
         rspm = float(request.form.get('rspm'))
@@ -45,7 +44,6 @@ def predict():
         # Make prediction using the model loaded from disk as per the data
         prediction = model.predict([[SOi, Noi, Rpi, SPmi]])
 
-        # Take the first value of prediction
         output = prediction[0]
 
     except ValueError:
