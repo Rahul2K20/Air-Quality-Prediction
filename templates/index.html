@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict Air Quality</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Predict Air Quality</h2>
+        <form action="/predict" method="post">
+            <div class="input-group">
+                <label for="so2">SO2:</label>
+                <input type="text" id="so2" name="so2" required>
+            </div>
+            <div class="input-group">
+                <label for="no2">NO2:</label>
+                <input type="text" id="no2" name="no2" required>
+            </div>
+            <div class="input-group">
+                <label for="rspm">RSPM:</label>
+                <input type="text" id="rspm" name="rspm" required>
+            </div>
+            <div class="input-group">
+                <label for="spm">SPM:</label>
+                <input type="text" id="spm" name="spm" required>
+            </div>
+            <div class="input-group">
+                <button type="submit">Predict</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
