@@ -16,7 +16,6 @@ def calculate_index(val, breakpoints):
 def calculate_aqi(si, ni, rspmi, spmi):
     return max(si, ni, rspmi, spmi)
 
-# Define breakpoints
 breakpoints_so2 = [(40, 50, 80, 100), (80, 100, 380, 200), (380, 200, 800, 300), (800, 300, 1600, 400), (1600, 400, float('inf'), 500)]
 breakpoints_no2 = [(40, 50, 80, 100), (80, 100, 180, 200), (180, 200, 280, 300), (280, 300, 400, 400), (400, 400, float('inf'), 500)]
 breakpoints_rspm = [(30, 50, 60, 100), (60, 100, 90, 200), (90, 200, 120, 300), (120, 300, 250, 400), (250, 400, float('inf'), 500)]
