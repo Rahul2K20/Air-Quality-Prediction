@@ -5,66 +5,28 @@
   <link rel="stylesheet" type="text/css" href="/static/style.css">
 </head>
 <body>
-<h2>Predict Air Quality </h2>
+<div class="container">
+    <h2>Predict Air Quality</h2>
 
-<div class="flex-container">
-  <div class="form-container">
-    <form action="/predict" method="post">
-      <div class="input-group">
+    <div class="input-group">
+      <form action="/predict" method="post">
         <label for="so2">SO2 AQI (Sulfur Dioxide)</label>
         <input type="text" id="so2" name="so2" required>
-      
-      </div>
 
-      <div class="input-group">
         <label for="no2">NO2 AQI (Nitrogen Dioxide)</label>
         <input type="text" id="no2" name="no2" required>
-        
-      </div>
 
-      <div class="input-group">
         <label for="rspm">RSPM AQI (Respirable Suspended Particulate Matter)</label>
         <input type="text" id="rspm" name="rspm" required>
-       
-      </div>
 
-      <div class="input-group">
         <label for="spm">SPM AQI (Suspended Particulate Matter)</label>
         <input type="text" id="spm" name="spm" required>
-       
-      </div>
 
-      <p class="description">All values typically range from 0 to 500.</p>
+        <p class="description">All values typically range from 0 to 500.</p>
 
-      <div class="input-group">
         <button type="submit">Predict</button>
-      </div>
-    </form>
-  </div>
-
-  <div class="info-container">
-    <div class="info-card">
-      <h4>SO2 (Sulfur Dioxide)</h4>
-      <p>A colorless and pungent gas, poses significant threats to human health and the environment, primarily through respiratory problems and the formation of acid rain.</p>
+      </form>
     </div>
-
-    <div class="info-card">
-      <h4>NO2 (Nitrogen Dioxide)</h4>
-      <p>A reddish-brown gas, is a harmful air pollutant that contributes to the formation of smog, respiratory issues, and has adverse effects on the environment and climate.</p>
-    </div>
-
-    <div class="info-card">
-      <h4>RSPM (Respirable Suspended Particulate Matter)</h4>
-      <p>A hazardous airborne pollutant consisting of tiny solid particles that can penetrate deep into the lungs, leading to severe respiratory and cardiovascular health problems.</p>
-    </div>
-
-    <div class="info-card">
-      <h4>SPM (Suspended Particulate Matter)</h4>
-      <p>A mixture of solid and liquid particles suspended in the air, which can have harmful effects on human health and the environment.</p>
-    </div>
-  </div>
 </div>
-
 </body>
 </html>
-
