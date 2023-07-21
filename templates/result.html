@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Predicted Air Quality</title>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+<h2>Predicted Air Quality</h2>
+
+<div class="info-card">
+    <h4>Category</h4>
+    <p>{{ prediction }}</p>
+</div>
+
+{% if prediction == 'Excellent' %}
+    <p>Air quality is considered satisfactory, and air pollution poses little or no risk.</p>
+{% elif prediction == 'Acceptable' %}
+    <p>Air quality is acceptable; however, there may be a risk for some people, particularly those who are unusually sensitive to air pollution.</p>
+{% elif prediction == 'Caution' %}
+    <p>Members of sensitive groups may experience health effects. The general public is not likely to be affected.</p>
+{% elif prediction == 'Poor' %}
+    <p>Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects.</p>
+{% elif prediction == 'Very Poor' %}
+    <p>Health warnings of emergency conditions. The entire population is more likely to be affected.</p>
+{% else %}
+    <p>Health alert: everyone may experience more serious health effects.</p>
+{% endif %}
+
+<button class="back-button" onclick="window.location.href='/'">Back to prediction</button>
+
+</body>
+</html>
