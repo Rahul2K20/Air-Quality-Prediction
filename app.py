@@ -4,13 +4,6 @@ import joblib
 app = Flask(__name__)
 model = joblib.load('RF_model.pkl')
 
-def calculate_index(val, breakpoints):
-    for bp in breakpoints:
-        if val <= bp[0]:
-            return bp[1] * val / bp[0]
-        elif val <= bp[2]:
-            return bp[1] + (val - bp[0]) * (bp[3] - bp[1]) / (bp[2] - bp[0])
-    return bp[3] + (val - bp[2]) * (500 - bp[3]) / (bp[4] - bp[2])
 
 @app.route('/')
 def home():
