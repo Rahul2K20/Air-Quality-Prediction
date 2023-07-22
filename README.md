@@ -28,7 +28,6 @@ To provide better visual feedback, the results page changes the color of the tex
 To use the application, start the Flask server by running app.py. Then, navigate to the server's address in your web browser (by default, this is localhost:5000). Enter the AQI measurements into the form and submit the form to see the predicted air quality category.
 
 ## Future Improvements
-This application could be improved in several ways:
 
 - **Improving user input validation:** The application currently only checks if the inputs are numbers. Additional validation could include checking that the numbers are within the expected range for AQI measurements.
 - **Improving visual feedback:** The visual feedback could be further improved by adding animations or more sophisticated design elements. The color scheme could also be adjusted to be more visually appealing or to better represent the severity of each category.
