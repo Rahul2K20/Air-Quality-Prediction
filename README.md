@@ -30,6 +30,5 @@ To use the application, start the Flask server by running app.py. Then, navigate
 ## Future Improvements
 This application could be improved in several ways:
 
-- **Adding additional features:** Currently, the model only considers four AQI measurements. Including more features could potentially improve the accuracy of the model.
 - **Improving user input validation:** The application currently only checks if the inputs are numbers. Additional validation could include checking that the numbers are within the expected range for AQI measurements.
 - **Improving visual feedback:** The visual feedback could be further improved by adding animations or more sophisticated design elements. The color scheme could also be adjusted to be more visually appealing or to better represent the severity of each category.
