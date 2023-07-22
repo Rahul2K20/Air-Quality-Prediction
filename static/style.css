@@ -83,3 +83,29 @@ h2 {
     font-size: 18px;
     transition: background-color 0.3s ease;
 }
+
+.result-container.excellent {
+    background-color: #d4edda;
+}
+
+.result-container.acceptable {
+    background-color: #fff3cd;
+}
+
+.result-container.caution {
+    background-color: #ffeeba;
+}
+
+.result-container.poor {
+    background-color: #f8d7da;
+}
+
+.result-container.very\ poor {
+    background-color: #f8d7da;
+}
+
+.result-container {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}

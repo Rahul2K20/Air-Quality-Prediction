@@ -12,7 +12,7 @@ def home():
 @app.route('/predict',methods=['POST'])
 def predict():
     try:  
-        # Get the data from the POST request
+      
         SOi = float(request.form.get('so2'))
         Noi = float(request.form.get('no2'))
         Rpi = float(request.form.get('rspm'))
