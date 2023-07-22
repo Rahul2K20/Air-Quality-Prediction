@@ -1,7 +1,7 @@
-#Air Quality Prediction Web Application
+# Air Quality Prediction Web Application
 This project is a Flask-based web application designed to predict the air quality category based on various air quality index (AQI) measurements. The application takes user input of four AQI measurements: sulfur dioxide (SO2), nitrogen dioxide (NO2), respirable suspended particulate matter (RSPM), and suspended particulate matter (SPM). These measurements are then used to predict the air quality category, which can be one of the following: Excellent, Acceptable, Caution, Poor, Very Poor, or Critical.
 
-#Implementation
+# Implementation
 The model used for prediction is a pre-trained Random Forest model, which is loaded at the start of the application. The app is implemented using the Flask web framework.
 
 The main application (app.py) consists of two routes:
@@ -24,10 +24,10 @@ Poor: Light Red
 Very Poor: Dark Red
 Critical: Maroon
 
-#Usage
+# Usage
 To use the application, start the Flask server by running app.py. Then, navigate to the server's address in your web browser (by default, this is localhost:5000). Enter the AQI measurements into the form and submit the form to see the predicted air quality category.
 
-#Future Improvements
+# Future Improvements
 This application could be improved in several ways:
 
 Adding additional features: Currently, the model only considers four AQI measurements. Including more features could potentially improve the accuracy of the model.
