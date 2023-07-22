@@ -17,12 +17,13 @@ The application's styling is in the static/style.css file.
 # Visual Feedback
 To provide better visual feedback, the results page changes the color of the text and the background color of the result container based on the predicted air quality category. The colors are set in the CSS file and are applied through a class that matches the name of the predicted category. The color scheme is as follows:
 
-Excellent: Green
-Acceptable: Light Yellow
-Caution: Light Orange
-Poor: Light Red
-Very Poor: Dark Red
-Critical: Maroon
+- ![Green](https://via.placeholder.com/15/008000/000000?text=+) `Excellent`
+- ![Light Yellow](https://via.placeholder.com/15/ffff00/000000?text=+) `Acceptable`
+- ![Light Orange](https://via.placeholder.com/15/ffa500/000000?text=+) `Caution`
+- ![Light Red](https://via.placeholder.com/15/f03c15/000000?text=+) `Poor`
+- ![Dark Red](https://via.placeholder.com/15/8b0000/000000?text=+) `Very Poor`
+- ![Maroon](https://via.placeholder.com/15/800000/000000?text=+) `Critical`
+
 
 # Usage
 To use the application, start the Flask server by running app.py. Then, navigate to the server's address in your web browser (by default, this is localhost:5000). Enter the AQI measurements into the form and submit the form to see the predicted air quality category.
