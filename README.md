@@ -14,7 +14,7 @@ index.html - The homepage of the application, containing the form for the user t
 result.html - The results page, which displays the predicted air quality category and a description of what that category means.
 The application's styling is in the static/style.css file.
 
-#Visual Feedback
+# Visual Feedback
 To provide better visual feedback, the results page changes the color of the text and the background color of the result container based on the predicted air quality category. The colors are set in the CSS file and are applied through a class that matches the name of the predicted category. The color scheme is as follows:
 
 Excellent: Green
