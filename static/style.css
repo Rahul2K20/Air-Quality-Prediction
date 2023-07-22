@@ -109,3 +109,8 @@ h2 {
     border-radius: 10px;
     margin-bottom: 20px;
 }
+
+form {
+    transition: opacity 0.5s;
+}
+

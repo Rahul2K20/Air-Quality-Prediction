@@ -10,16 +10,16 @@
 
     <div class="input-group">
       <form action="/predict" method="post">
-        <label for="so2">SO2 AQI (Sulfur Dioxide)</label>
+        <label for="so2" title="Sulfur Dioxide (SO2): A gas produced by burning coal, oil, gasoline, diesel fuel, and other fossil fuels. It is a major contributor to smog and acid rain. High concentrations can cause breathing difficulties for asthmatics.">SO2 AQI (Sulfur Dioxide)</label>
         <input type="text" id="so2" name="so2" required>
 
-        <label for="no2">NO2 AQI (Nitrogen Dioxide)</label>
+        <label for="no2" title="Nitrogen Dioxide (NO2): This gas forms quickly from emissions from cars, trucks and buses, power plants, and off-road equipment. In addition to contributing to the formation of ground-level ozone, and fine particle pollution, NO2 is linked with a number of adverse effects on the respiratory system.">NO2 AQI (Nitrogen Dioxide)</label>
         <input type="text" id="no2" name="no2" required>
 
-        <label for="rspm">RSPM AQI (Respirable Suspended Particulate Matter)</label>
+        <label for="rspm" title="Respirable Suspended Particulate Matter (RSPM): These are tiny solid or liquid particles of soot, dust, smoke, fumes, and aerosols in the air. Exposure to high concentrations can cause respiratory problems and other health issues.">RSPM AQI (Respirable Suspended Particulate Matter)</label>
         <input type="text" id="rspm" name="rspm" required>
 
-        <label for="spm">SPM AQI (Suspended Particulate Matter)</label>
+        <label for="spm" title="Suspended Particulate Matter (SPM): These are microscopic solids or liquid droplets that are so small that they can get deep into the lungs and cause serious health problems.">SPM AQI (Suspended Particulate Matter)</label>
         <input type="text" id="spm" name="spm" required>
 
         <p class="description">All values typically range from 0 to 500.</p>
@@ -28,5 +28,6 @@
       </form>
     </div>
 </div>
+<script src="/static/main.js"></script>
 </body>
 </html>
